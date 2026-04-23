@@ -112,13 +112,6 @@ This phase ensures the system is secure and compliant **before production**.
 
 ---
 
-## 📊 Lifecycle Position
-
-```text
-Design → Development → PCI DSS → UAT → Go-Live
-
----
-
 ## 🧩 Sequence Diagram
 
 ```mermaid
@@ -183,3 +176,5 @@ sequenceDiagram
 
     Note over Risk,Dev: PCI scope, tokenization, and no CVV storage must be enforced
     Note over Bank,Dev: Settlement, reconciliation, and dispute handling must be validated before go-live
+
+
