@@ -117,6 +117,8 @@ This phase ensures the system is secure and compliant **before production**.
 ```text
 Design → Development → PCI DSS → UAT → Go-Live
 
+---
+
 ## 🧩 Sequence Diagram
 
 ```mermaid
