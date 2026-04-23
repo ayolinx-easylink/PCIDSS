@@ -64,7 +64,6 @@ sequenceDiagram
     Note over Bank,Dev: Settlement, reconciliation, and dispute handling must be validated before go-live
 
 
----
 
 ## 📌 Overview
 This document explains where **PCI DSS compliance** fits within the payment system development lifecycle, especially for a payment aggregator like Ayolinx.
