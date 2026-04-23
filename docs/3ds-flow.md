@@ -31,7 +31,7 @@ sequenceDiagram
     NET->>ACS: Check card enrollment / authentication requirement
 
     ACS-->>NET: Authentication challenge required
-    NET-->>ACQ: Return challenge निर्देश
+    NET-->>ACQ: Return challenge data
     ACQ-->>BE: Return 3DS challenge data
     BE-->>FE: Render 3DS challenge
 
