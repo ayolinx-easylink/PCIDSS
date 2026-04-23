@@ -110,13 +110,6 @@ This phase ensures the system is secure and compliant **before production**.
 
 ---
 
-## 📊 Lifecycle Position
-
-```text
-Design → Development → PCI DSS → UAT → Go-Live
-
----
-
 ## 🧩 Sequence Diagram
 
 # 🔐 PCI DSS Phase in Payment System Lifecycle
