@@ -1,7 +1,3 @@
----
-
-# 📁 docs/3ds-flow.md
-
 # 🔐 3D Secure (3DS) Payment Flow
 
 ## 🎯 Overview
