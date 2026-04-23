@@ -1,3 +1,5 @@
+# 🔐 PCI DSS Phase in Payment System Lifecycle
+
 ## 📌 Overview
 This document explains where **PCI DSS compliance** fits within the payment system development lifecycle, especially for a payment aggregator like Ayolinx.
 
@@ -111,8 +113,6 @@ This phase ensures the system is secure and compliant **before production**.
 ---
 
 ## 🧩 Sequence Diagram
-
-# 🔐 PCI DSS Phase in Payment System Lifecycle
 
 ```mermaid
 sequenceDiagram
