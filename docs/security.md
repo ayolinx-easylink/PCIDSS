@@ -1,15 +1,3 @@
-```mermaid
-sequenceDiagram
-    actor User
-    participant API
-    participant CDE
-    participant HSM
-    participant DB
-
-    User->>API: Submit card data
-    API->>CDE: Forward data
-    CDE->>HSM: Encrypt PAN
-    CDE->>DB: Store encrypted PAN
 
 ---
 
@@ -36,25 +24,24 @@ sequenceDiagram
 
 ---
 
-## Controls by Layer
+## 🔄 Security Flow Diagrams
 
-### Frontend
-- No logging card data
-- HTTPS only
+### 1. CVV Handling (Must Not Be Stored)
+```mermaid
+sequenceDiagram
+    actor User
+    participant FE as Frontend
+    participant API as Backend API
+    participant MEM as Temp Memory
+    participant PRC as Processor
+    participant DB as Database
 
-### Backend
-- RBAC + MFA
-- No sensitive logs
-
-### Database
-- Encrypted PAN
-- Audit logs
-
-### Network
-- Segmented CDE
-- Firewall rules
-
----
-
-## CVV Rule
-- NEVER store CVV
+    User->>FE: Enter PAN + Expiry + CVV
+    FE->>API: Send over TLS
+    API->>MEM: Use CVV for auth only
+    MEM->>PRC: Authorize request
+    PRC-->>MEM: Result
+    MEM->>MEM: Clear CVV from memory
+    MEM->>DB: Store token / encrypted PAN (no CVV)
+    DB-->>API: OK
+    API-->>FE: Status
