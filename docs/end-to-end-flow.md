@@ -18,7 +18,7 @@ Actors involved:
 sequenceDiagram
     actor User as End User
     participant FE as Frontend (App/Web)
-    participant BE as Backend (WazzPay)
+    participant BE as Backend (Ayolinx)
     participant ACQ as Acquirer Bank
     participant NET as Card Network (Visa/Mastercard)
 
