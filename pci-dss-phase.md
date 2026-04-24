@@ -77,14 +77,7 @@ This phase ensures the system is secure and compliant **before production**.
 
 ## 📊 PCI DSS Scope for Ayolinx
 
-### Option 1: Using Gateway (Recommended Early Stage)
-- No PAN storage
-- Scope: **SAQ A / SAQ A-EP**
-- Faster and cheaper
-
----
-
-### Option 2: Direct Acquirer Integration
+### Direct Acquirer Integration
 - Handle card data internally
 - Scope: **SAQ D (Full PCI DSS)**
 - Requires:
@@ -98,7 +91,6 @@ This phase ensures the system is secure and compliant **before production**.
 
 | Scope Type | Duration |
 |------------|---------|
-| SAQ A      | 2–4 weeks |
 | SAQ D      | 3–9 months |
 
 ---
